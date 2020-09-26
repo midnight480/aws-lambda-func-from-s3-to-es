@@ -49,6 +49,6 @@ def lambda_handler(event, context):
         # Prepare for id
         doc = row
         # Set id of Documents
-        date = doc['date']
+        XXXX = doc['XXXX'] # NOTE id_name e.g date
         # Transfer CSV Data of S3 to ElasticSearch      
-        es.index( index = index_name, id = date, body = doc)
+        es.index( index = index_name, id = XXXX, body = doc)
